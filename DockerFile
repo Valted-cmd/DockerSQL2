@@ -1,0 +1,5 @@
+FROM openjdk:8-slim
+WORKDIR /usr/src/myapp
+COPY . /usr/src/myapp
+EXPOSE '9999'
+CMD ["java", "-jar", "db-api-for-docker.jar"]
